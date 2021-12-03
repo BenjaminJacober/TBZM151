@@ -1,0 +1,38 @@
+[
+  {
+  "fname": "Test McTestson",
+  "lname": "Last Name",
+  "bdate": "01.01.2021",
+  "mail": "smn@gmail.com",
+  "ahv": "756.1234.5678.90",
+  "personalNr": "1",
+  "phone": "0796778008",
+  "section": "LIMA",
+  "job": "Junior dev.",
+  "description": "Something something"
+  },
+  {
+  "fname": "Test McTestson",
+  "lname": "Last Name",
+  "bdate": "01.01.2021",
+  "mail": "smn@gmail.com",
+  "ahv": "756.1234.5678.90",
+  "personalNr": "1",
+  "phone": "0796778008",
+  "section": "LIMA",
+  "job": "Junior dev.",
+  "description": "Something something"
+  },
+  {
+  "fname": "Test McTestson",
+  "lname": "Last Name",
+  "bdate": "01.01.2021",
+  "mail": "smn@gmail.com",
+  "ahv": "756.1234.5678.90",
+  "personalNr": "1",
+  "phone": "0796778008",
+  "section": "LIMA",
+  "job": "Junior dev.",
+  "description": "Something something"
+    }
+]
