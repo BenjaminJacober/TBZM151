@@ -5,30 +5,8 @@
     <title>Home</title>
 </head>
 <body>
-    <form>
-        <label>Last name</label>
-        <input type="text" id="lastname" name="lastname">
-        <br>
-        <label>First name</label>
-        <input type="text"  id="firstname" name="firstname">
-        <br>
-        <label>Birth date</label>
-        <input type="date" id="birthdate" name="birthdate">
-        <br>
-        <label>E-Mail</label>
-        <input type="email"  id="email" name="email">
-        <br>
-        <label>AHV number</label>
-        <input type="text"  id="ahv" name="ahv">
-        <br>
-        <label>Personal number</label>
-        <input type="text" id="pnumber" name="pnumber">
-        <br>
-        <label>Section</label>
-        <input type="text" id="section" name="section">
-        <br>
-        <label>Job</label>
-        <input type="text"  id="job" name="job">
-    </form>
+    {% include 'addPersonForm.html' %}
+    <p>---------------</p>
+    {% include 'person.html' %}
 </body>
 </html>
