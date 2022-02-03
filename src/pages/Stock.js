@@ -21,8 +21,6 @@ const getProducts = async () => {
     }
 }
 
-getProducts();
-
 const Stock = () => {
 
     const [products, setProducts] = useState([])
