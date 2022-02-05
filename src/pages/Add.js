@@ -2,20 +2,23 @@ import {Button, Card, Col, Dropdown, Form, Row} from "react-bootstrap";
 import PageLayout from "./pageLayout/PageLayout";
 import SelectSearch, {fuzzySearch} from "react-select-search";
 import {useState} from "react";
+import axios from "axios";
 
+// Todo: get from db
 const options = [
-    {name: 'kg', value: 'kg'},
-    {name: 'g', value: 'g'},
-    {name: 'package', value: 'pkg'},
-    {name: 'bag', value: 'bg'},
-    {name: 'piece', value: 'pc'},
+    {name: 'g', value: '1'},
+    {name: 'kg', value: '2'},
+    {name: 'bag/s', value: '3'},
+    {name: 'glasses', value: '4'},
+    {name: 'cans', value: '5'},
+    {name: 'pieces', value: '6'},
 ];
 
 const Add = () => {
 
-    const [productName, setProductName] = useState("Carrots");
+    const [productName, setProductName] = useState();
     const [amount, setAmount] = useState(1);
-    const [unit, setUnit] = useState("pc");
+    const [unit, setUnit] = useState("1");
 
     const updateAmount = (e) => {
         let amount = e.target.value;
@@ -25,9 +28,16 @@ const Add = () => {
         }
     }
 
-    const submit = () => {
-        console.log(productName, amount, unit)
-    }
+    const submit = () => axios({
+        url: "http://localhost:5000/add",
+        method: "POST",
+        headers: {
+            productName: productName,
+            userId: 4,
+            amount: amount,
+            unitId: unit
+        }
+    });
 
     return <PageLayout>
         <Card>
